@@ -13,11 +13,7 @@ That includes back end development, software development, data science and writi
 **Some resources for Learn Python**
 
 - [Python by Codecademy (Free)](https://www.codecademy.com/learn/learn-python)
-
-
-
-Python by Codecademy (Free)
-Python Tutorial for Beginners (Programming with Mosh)
-Python.org’s Getting Started Guide
-Python courses on EdX
-Python courses on Udemy
+- [Python Tutorial for Beginners (Programming with Mosh)] (https://www.youtube.com/watch?v=_uQrJ0TkZlc)
+- [Python.org’s Getting Started Guide] (https://www.python.org/about/gettingstarted/)
+- [Python courses on EdX] (https://www.edx.org/learn/python)
+- [Python courses on Udemy] (https://www.udemy.com/topic/python/)
