@@ -17,3 +17,32 @@ $ ./chapter-2.py octopus
 Ahoy, Captain, an octopus off the larboard bow!
 
 """
+
+import argparse
+import os
+import sys
+
+
+def get_every_args():
+    """Command Line All types Arguments"""
+    parseer = argparse.ArgumentParser(description='Rock Cash Casbah',
+                                      formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+    """ Make a Positional Argument"""
+    parseer.add_argument('word',
+                         metavar='object',
+                         help='A named string Argument')
+    return parseer.parse_args()
+
+
+def main():
+    argss = get_every_args()
+    word = (argss.word).lower()
+    if word[0] == 'a' or word[0] == 'e' or word[0] == 'i' or word[0] == 'o' or word[0] == 'u':
+        article = 'an'
+    else:
+        article = 'a'
+    print(f'Ahoy, Captain, {article} {word} off the larboard bow!')
+
+
+if __name__ == '__main__':
+    main()
