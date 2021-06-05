@@ -34,6 +34,11 @@ def get_every_args():
     return parseer.parse_args()
 
 
+""" Alternative Approach for the Condition
+    if word[0] in 'aeiou'
+"""
+
+
 def main():
     argss = get_every_args()
     word = (argss.word).lower()
