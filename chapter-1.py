@@ -5,6 +5,8 @@ Chapter 1
 """
 
 import argparse
+import os
+import sys
 """
 The argparse module is a standard module that is always 
 installed with Python. It’s widely used because it can 
@@ -16,7 +18,7 @@ text to numbers, to validate and open files, and much more.
 
 
 def get_args():
-    """Get the Name"""
+   
     parser = argparse.ArgumentParser(description='Say Hello')
     parser.add_argument('name', default='world', help='Name to greet')
     return parser.parse_args()
@@ -30,8 +32,6 @@ def main():
 if __name__ == '__main__':
     main()
 
-""" This Part of the Code parse anything"""
-
 
 def get_every_args():
     """Command Line All types Arguments"""
@@ -39,27 +39,28 @@ def get_every_args():
                                       formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     """ Make a Positional Argument"""
     parseer.add_argument('positional',
-                         help='A named string Argument',
-                         metavar='str')
-    """ Take Sring"""
-    parseer.add_argument('--a',
-                         '--arg',
-                         help='A named string Argument',
                          metavar='str',
-                         type=str, default='')
+                         help='A named string Argument')
+    """ Take Sring"""
+    parseer.add_argument('-a',
+                        '--arg',
+                        help='A named string argument',
+                        metavar='str',
+                        type=str,
+                        default='')
     """ Take Integer"""
-    parseer.add_argument('--i',
+    parseer.add_argument('-i',
                          '--int',
                          help='A named integer Argument',
-                         metavar='str',
-                         type=int, default='')
+                         metavar='int',
+                         type=int, default=0)
     """ Take from file"""
-    parseer.add_argument('--f',
+    parseer.add_argument('-f',
                          '--file',
                          help='A readable file',
                          metavar='FILE',
                          type=argparse.FileType('r'), default=None)
-    parseer.add_argument('--o',
+    parseer.add_argument('-o',
                          '--on',
                          help='A boolean flag',
                          action='store_true')
@@ -68,7 +69,6 @@ def get_every_args():
 
 
 def main():
-    ''' Main'''
     argss = get_every_args()
     str_arg = argss.arg
     int_arg = argss.int
