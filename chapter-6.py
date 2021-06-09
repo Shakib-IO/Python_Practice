@@ -45,6 +45,7 @@ def main():
         total_bytes += num_bytes
         total_words += num_words
 
+        """using {:8} placeholders in the print template to indicate a text field 8 characters wide"""
         print(f'{num_line:8} lines {num_words:8} words {num_bytes:8} bytes {fh.name}')
 
     if len(argss.file) > 1:
