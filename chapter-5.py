@@ -21,12 +21,12 @@ def get_every_args():
     parseer.add_argument('text',
                          metavar='str',
                          help='Input String or File')
-    
+
     parseer.add_argument('-o',
                          '--outfile',
                          help='Output filename',
                          metavar='str',
-                         type= str,
+                         type=str,
                          default='')
 
     args = parseer.parse_args()
@@ -42,7 +42,6 @@ def main():
     out_fh = open(argss.outfile, 'wt') if argss.outfile else sys.stdout
     out_fh.write(argss.text.upper() + '\n')
     out_fh.close()
-
 
 
 if __name__ == '__main__':
