@@ -25,15 +25,30 @@ def get_every_args():
                          nargs='*',
                          help='Input file',
                          metavar='FILE',
-                         type=argparse.FileType('rt'), 
-                         default = sys.stdin )
+                         type=argparse.FileType('rt'),
+                         default=sys.stdin)
 
     return parseer.parse_args()
 
 
 def main():
     argss = get_every_args()
-    
+    total_lines, total_bytes, total_words = 0, 0, 0
+    for fh in argss.file:
+        num_line, num_bytes, num_words = 0, 0, 0
+        for line in fh:
+            num_line += 1
+            num_bytes += len(line)
+            num_words += len(line.split())
+
+        total_lines += num_line
+        total_bytes += num_bytes
+        total_words += num_words
+
+        print(f'{num_line:8} lines {num_words:8} words {num_bytes:8} bytes {fh.name}')
+
+    if len(argss.file) > 1:
+        print(f'{total_lines:8}{total_words:8}{total_bytes:8} total')
 
 
 if __name__ == '__main__':

@@ -1,0 +1,5 @@
+Splitting the text into spaces doesn’t actually produce words
+because it won’t separate the punctuation, like commas and periods, 
+from the letters, but it’s close enough for this program. 
+In chapter 15, we’ll look at how to use a regular expression to 
+separate strings that look like words from others that do not.
