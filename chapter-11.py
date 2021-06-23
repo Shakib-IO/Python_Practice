@@ -1,6 +1,6 @@
 '''
 Chapter-11
- Bottles of Beer Song: Writing and testing functions
+Bottles of Beer Song: Writing and testing functions
 
 In this exercise, you will
  Learn how to produce a list of numbers decreasing in value
@@ -12,7 +12,7 @@ import argparse
 
 def get_every_args():
     """Command Line All types Arguments"""
-    parseer = argparse.ArgumentParser(description='Telephones',
+    parseer = argparse.ArgumentParser(description=' Bottles of Beer Song',
                                       formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     """ Make a Positional Argument"""
     parseer.add_argument('text',
