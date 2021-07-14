@@ -18,3 +18,7 @@ That includes back end development, software development, data science and writi
 - [Python courses on EdX](https://www.edx.org/learn/python)
 - [Python courses on Udemy](https://www.udemy.com/topic/python/)
 - [Tiny Python Projects Book](https://www.manning.com/books/tiny-python-projects)
+
+----
+
+Reinforcement Learning Practice: https://github.com/ShangtongZhang/reinforcement-learning-an-introduction
