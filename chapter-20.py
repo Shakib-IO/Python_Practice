@@ -62,23 +62,40 @@ def main():
     '''Make a jazz noise Here'''
     args = get_every_args()
     random.seed(args.seed)
-    wod = []
-    exercises = read_csv(args.file)
+    words = set()
 
-    for name, low, high in random.sample(exercises, k=args.num):
-        reps = random.randint(low, high)
-    if args.easy:
-        reps = int(reps / 2)
-    wod.append((name, reps))
+    def word_len(word):
+        return args.min_word_len <= len(word) <= args.max_word_len
+
+    for fh in args.file:
+        for line in fh:
+            for word in filter(word_len, map(clean, line.lower().split())):
+                words.add(word.title())
+
+    words = sorted(words)
+    passwords = [
+        ''.join(random.sample(words, args.num_words)) for _ in range(args.num)
+    ]
+    if args.l33t:
+        passwords = map(l33t, passwords)
+
+    print('\n'.join(passwords))
 
 
-def read_csv(fh):
-    """Read the CSV input"""
-    exercises = []
-    for row in csv.DictReader(fh, delimiter=','):
-        low, high = map(int, row['reps'].split('-'))
-        exercises.append((row['exercise'], low, high))
-    return exercises
+def clean(word):
+    return re.sub('[^a-zA-Z]', '', word)
+
+
+def l33t(text):
+    text = ransom(text) 
+    xform = str.maketrans({
+        'a': '@', 'A': '4', 'O': '0', 't': '+', 'E': '3', 'I': '1', 'S': '5'})
+    return text.translate(xform) + random.choice(string.punctuation)
+
+
+def ransom(text):
+    return ''.join(
+        map(lambda c: c.upper() if random.choice([0, 1]) else c.lower(), text))
 
 
 if __name__ == '__main__':
