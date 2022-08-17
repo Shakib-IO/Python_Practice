@@ -20,6 +20,7 @@ That includes back end development, software development, data science and writi
 - [Tiny Python Projects Book](https://www.manning.com/books/tiny-python-projects)
 - [Data Science & Machine Learning by Chris Albon](https://chrisalbon.com/)
 - [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
+- [Think Like a Programmer](https://www.amazon.com/Think-Like-Programmer-Introduction-Creative/dp/1593274246/ref=as_li_ss_tl?ie=UTF8&linkCode=sl1&tag=vantspr-20&linkId=4eafe8e61be1c7f1c8dfdec62532152a)
 
 ----
 
