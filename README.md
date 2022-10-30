@@ -22,7 +22,8 @@ That includes back end development, software development, data science and writi
 - [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
 - [Think Like a Programmer](https://www.amazon.com/Think-Like-Programmer-Introduction-Creative/dp/1593274246/ref=as_li_ss_tl?ie=UTF8&linkCode=sl1&tag=vantspr-20&linkId=4eafe8e61be1c7f1c8dfdec62532152a)
 - [CS50’s Introduction to Programming with Python](https://cs50.harvard.edu/python/2022/)
-- 
+- [ProblemSolvingwithAlgorithmsandDataStructures.pdf](https://github.com/Shakib-IO/Python_Practice/files/9897072/ProblemSolvingwithAlgorithmsandDataStructures.pdf)
+
 
 ----
 
