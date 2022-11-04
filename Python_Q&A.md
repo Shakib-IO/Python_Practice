@@ -1,5 +1,5 @@
 ```
-So by doing **x=x[:,1]** we get all the rows in x present at index 1.
+So by doing x=x[:,1] we get all the rows in x present at index 1.
 x = array([[0.69859393, 0.1042432 ],
    [0.55138493, 0.18639614],
    [0.27338772, 0.80351282]])
