@@ -1,0 +1,1 @@
+- so by doing x=x[:,1] we get all the rows in x present at index 1.
