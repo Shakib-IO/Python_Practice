@@ -26,3 +26,7 @@ data.iloc[:,-1] # last column of data frame (id)
 3. You can use underscore(_) as a variable in looping. See the examples below to get an idea.
 4. If you have a long digits number, you can separate the group of digits as you like for better understanding.
 ```
+```
+Python Decorators Tutorial: https://www.datacamp.com/tutorial/decorators-python
+
+```
