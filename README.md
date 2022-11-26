@@ -25,6 +25,7 @@ That includes back end development, software development, data science and writi
 - [ProblemSolvingwithAlgorithmsandDataStructures.pdf](https://github.com/Shakib-IO/Python_Practice/files/9897072/ProblemSolvingwithAlgorithmsandDataStructures.pdf)
 ----
 
+
 **Exercises**
 
 - [Reinforcement Learning Practice](https://github.com/ShangtongZhang/reinforcement-learning-an-introduction)
