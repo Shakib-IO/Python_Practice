@@ -23,6 +23,7 @@ That includes back end development, software development, data science and writi
 - [Think Like a Programmer](https://www.amazon.com/Think-Like-Programmer-Introduction-Creative/dp/1593274246/ref=as_li_ss_tl?ie=UTF8&linkCode=sl1&tag=vantspr-20&linkId=4eafe8e61be1c7f1c8dfdec62532152a)
 - [CS50’s Introduction to Programming with Python](https://cs50.harvard.edu/python/2022/)
 - [Problem Solving with Algorithms and Data Structures.pdf](https://github.com/Shakib-IO/Python_Practice/files/9897072/ProblemSolvingwithAlgorithmsandDataStructures.pdf)
+- [Advance Python Tutorial](https://www.youtube.com/playlist?list=PL7yh-TELLS1FuqLSjl5bgiQIEH25VEmIc)
 
 
 
