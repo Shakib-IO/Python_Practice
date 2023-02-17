@@ -27,9 +27,9 @@ That includes back end development, software development, data science and writi
 
 
 
-
 **Exercises**
 
 - [Reinforcement Learning Practice](https://github.com/ShangtongZhang/reinforcement-learning-an-introduction)
 - [Pandas Practice](https://github.com/guipsamora/pandas_exercises)
 - [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/)
+- [PyNative](https://pynative.com/python-basic-exercise-for-beginners/)
