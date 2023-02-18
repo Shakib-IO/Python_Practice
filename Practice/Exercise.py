@@ -36,3 +36,19 @@ def find_substring(s, find_s):
     return count
     
 print(find_substring(str_x,find_s))
+
+# Exercise 9: Check Palindrome Number
+
+num = 121
+rev_num = 0
+temp = num
+
+while temp > 0:
+    rev_num = (rev_num * 10) + (temp % 10)
+    temp //= 10
+
+if num == rev_num:
+    print(num, "is a palindrome number")
+else:
+    print(num, "is not a palindrome number")
+
