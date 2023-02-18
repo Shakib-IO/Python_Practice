@@ -62,4 +62,11 @@ if num == rev_num:
     print(num, "is a palindrome number")
 else:
     print(num, "is not a palindrome number")
+    
+# Exercise 10: Create a new list from a two list using the following condition
 
+list1 = [10, 20, 25, 30, 35]
+list2 = [40, 45, 60, 75, 90]
+
+new_list = [x for x in list1 if x % 2 != 0] + [x for x in list2 if x % 2 == 0]
+print(new_list)
