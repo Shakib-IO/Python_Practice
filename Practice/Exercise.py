@@ -20,3 +20,19 @@ def check_is_same(x:list):
         return None
     return True if x[0]==x[-1] else False
 print(check_is_same(x))
+
+# Exercise 7: Return the count of a given substring from a string
+
+str_x = "Emma is good developer. Emma is a writer and emma can cooked will, also emma loves to read books"
+find_s = "Emma"
+
+def find_substring(s, find_s):
+    s = s.lower()
+    find_s = find_s.lower()
+    count = 0
+    for i in range(len(s)):
+        if s[i:i + len(find_s)] == find_s:
+            count +=1
+    return count
+    
+print(find_substring(str_x,find_s))
