@@ -70,3 +70,9 @@ list2 = [40, 45, 60, 75, 90]
 
 new_list = [x for x in list1 if x % 2 != 0] + [x for x in list2 if x % 2 == 0]
 print(new_list)
+
+# Exercise 13: Print multiplication table form 1 to 10
+for i in range(1,11):
+    for j in range(1, 11):
+        print(f"{i*j} ", end ="")
+    print()
