@@ -76,3 +76,16 @@ for i in range(1,11):
     for j in range(1, 11):
         print(f"{i*j} ", end ="")
     print()
+
+"""
+Exercise 14: Print downward Half-Pyramid Pattern with Star (asterisk)
+* * * * *  
+* * * *  
+* * *  
+* *  
+*
+"""
+for i in range(5):
+    for j in range(5, i , -1):
+        print("*", end ="")
+    print()
