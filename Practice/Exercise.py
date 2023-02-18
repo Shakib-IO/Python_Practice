@@ -52,3 +52,14 @@ if num == rev_num:
 else:
     print(num, "is not a palindrome number")
 
+
+# Another Approach
+
+rev_num = int(str(num)[::-1])
+
+# Compare the original number and the reversed number
+if num == rev_num:
+    print(num, "is a palindrome number")
+else:
+    print(num, "is not a palindrome number")
+
