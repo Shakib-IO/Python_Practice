@@ -85,7 +85,29 @@ Exercise 14: Print downward Half-Pyramid Pattern with Star (asterisk)
 * *  
 *
 """
+
+"""
+I want to build a function that takes as a parameter a list of integers and an integer n
+the function should return a list of n lists where each list will store the elements that 
+remain after the division with n they have as many positions of the list.
+Example:
+a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10 , 11, 12, 13, 14, 15, 16]
+n = 3
+and i want like this:
+[[3, 6, 9, 12, 15], [1, 4, 7, 10, 13, 16,],[2, 5, 8, 11, 14]]
+"""
+
 for i in range(5):
     for j in range(5, i , -1):
         print("*", end ="")
     print()
+
+    def divi(n:list, nn:int):
+    res_list = [[] for i in range(nn)]
+    for i, x in enumerate(n):
+        res_list[i % nn].append(x)
+    return res_list
+
+a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10 , 11, 12, 13, 14, 15, 16]
+nn = 3
+print(divi(a,nn))
