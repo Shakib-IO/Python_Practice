@@ -32,5 +32,6 @@ Python Decorators Tutorial: https://www.datacamp.com/tutorial/decorators-python
 ```
 
 - [Python kwargs & args](https://realpython.com/python-kwargs-and-args/)
+- [How To Index and Slice Strings](https://www.digitalocean.com/community/tutorials/how-to-index-and-slice-strings-in-python-3)
 
 
