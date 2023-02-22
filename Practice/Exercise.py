@@ -162,3 +162,12 @@ if len(s1) > len(s2):
 elif len(s2) > len(s1):
     s3 += s2[len(s1):]
 print(s3)
+
+# Exercise 10: Write a program to count occurrences of all characters within a string
+
+str1 = "ShakibKhan"
+has = {}
+for i in str1.lower():
+    cout = str1.count(i)
+    has[i] = cout
+print(has)
