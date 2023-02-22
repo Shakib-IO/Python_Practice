@@ -111,3 +111,33 @@ for i in range(5):
 a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10 , 11, 12, 13, 14, 15, 16]
 nn = 3
 print(divi(a,nn))
+
+
+"""
+Given two strings, s1 and s2, write a program to return a new string made of s1 and s2’s first, middle, and last characters.
+
+Given:
+s1 = "America"
+s2 = "Japan"
+
+Expected Output:
+AraJpn OR AJrpan
+"""
+s1 = "America"
+s2 = "Japan"
+strr = ""
+ls = [s1, s2]
+ld = []
+
+
+for i in ls:
+    print(i)
+    middle_value = len(i)//2
+    print(middle_value)
+    strr = (i[0] + i[middle_value] +i[-1:])
+    print(ld.append(strr))
+
+print(ld)
+for i in range(len(ld)):
+    ld = ''.join(ld)
+print(ld)
