@@ -171,3 +171,14 @@ for i in str1.lower():
     cout = str1.count(i)
     has[i] = cout
 print(has)
+
+# Exercise 12: Find the last position of a given substring
+str1 = "Emma is a data scientist who knows Python. Emma works at google."
+str2 = "Emma"
+len_s = len(str2)
+ls = -1 
+
+for i in range(len(str1)):
+    if str1[i: i+len_s] == "Emma":
+        ls = i
+print(ls)
