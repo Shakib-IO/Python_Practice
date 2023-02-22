@@ -141,3 +141,24 @@ print(ld)
 for i in range(len(ld)):
     ld = ''.join(ld)
 print(ld)
+
+"""
+Given two strings, s1 and s2. Write a program to create a new string 
+s3 made of the first char of s1, then the last char of s2, 
+Next, the second char of s1 and second last char of s2, and so on. 
+Any leftover chars go at the end of the result
+"""
+s1 = "Shakib"
+s2 = "KHAN"
+s2 = s2[: :-1]
+
+s3 = ''
+l = min(len(s1), len(s2))
+for i in range(l):
+    s3 +=(s1[i] + s2[i])
+
+if len(s1) > len(s2):
+    s3 += s1[len(s2):]
+elif len(s2) > len(s1):
+    s3 += s2[len(s1):]
+print(s3)
