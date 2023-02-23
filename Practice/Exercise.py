@@ -193,3 +193,20 @@ Given:
 l1 = [3, 6, 9, 12, 15, 18, 21]
 l2 = [4, 8, 12, 16, 20, 24, 28]
 """
+l1 = [3, 6, 9, 12, 15, 18, 21]
+l2 = [4, 8, 12, 16, 20, 24, 28]
+l3 = []
+
+for i in range(len(l1)):
+    if i%2!=0:
+        l3.append(l1[i])
+    if i%2==0 and i < len(l2):
+        l3.append(l2[i])
+
+print(f"Even & Odd List: {l3}")
+for i in range(len(l3)):
+    for j in range(i):
+        if l3[j] > l3[i]:
+            l3[i], l3[j] = l3[j], l3[i]
+print(f"Sorted List: {l3}")
+
