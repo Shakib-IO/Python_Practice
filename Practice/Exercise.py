@@ -182,3 +182,14 @@ for i in range(len(str1)):
     if str1[i: i+len_s] == "Emma":
         ls = i
 print(ls)
+
+"""
+Given two lists, l1 and l2, write a program to create a third list l3 by 
+picking an odd-index element from the list l1 and even index elements 
+from the list l2.
+
+Given:
+
+l1 = [3, 6, 9, 12, 15, 18, 21]
+l2 = [4, 8, 12, 16, 20, 24, 28]
+"""
