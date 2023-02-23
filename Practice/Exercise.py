@@ -172,6 +172,19 @@ for i in str1.lower():
     has[i] = cout
 print(has)
 
+# Exercise 4: Count the occurrence of each element from a list
+
+sample_list = [11, 45, 8, 11, 23, 45, 23, 45, 89]
+occ = {}
+count = 0
+
+for i in sample_list:
+    if i in occ:
+        occ[i] +=1
+    else:
+        occ[i] = 1
+print(occ)
+
 # Exercise 12: Find the last position of a given substring
 str1 = "Emma is a data scientist who knows Python. Emma works at google."
 str2 = "Emma"
