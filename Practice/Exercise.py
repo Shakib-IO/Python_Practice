@@ -223,3 +223,19 @@ for i in range(len(l3)):
             l3[i], l3[j] = l3[j], l3[i]
 print(f"Sorted List: {l3}")
 
+# Exercise 2: Concatenate two lists index-wise
+list1 = ["M", "na", "i", "Ke"]
+list2 = ["y", "me", "s", "lly", "and", "we"]
+list3 = []
+l = max(len(list1), len(list2))
+for i in range(l):
+    if i < len(list1) and i < len(list2):
+        list3.append(list1[i] + list2[i])
+
+    elif i < len(list1):
+        list3.append(list1[i])
+        
+    else:
+        list3.append(list2[i])
+
+print(list3)
