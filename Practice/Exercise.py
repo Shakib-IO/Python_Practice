@@ -271,3 +271,16 @@ list1 = [10, 20, [300, 400, [5000, 6000], 500], 30, 40]
 
 list1[2][2].append(7000)
 print(list1)
+
+# Exercise 8: Extend nested list by adding the sublist
+list1 = ["a", "b", ["c", ["d", "e", ["f", "g"], "k"], "l"], "m", "n"]
+sub_list = ["h", "i", "j"]
+
+# Understand indexing
+# list1[2] = ['c', ['d', 'e', ['f', 'g'], 'k'], 'l']
+# list1[2][1] = ['d', 'e', ['f', 'g'], 'k']
+# list1[2][1][2] = ['f', 'g']
+
+# solution
+list1[2][1][2].extend(sub_list)
+print(list1)
