@@ -1,5 +1,9 @@
 # https://pynative.com/python-basic-exercise-for-beginners/
 
+"""
+The isalnum() method returns True if all characters in the string are alphanumeric (either alphabets or numbers). If not, it returns False.
+"""
+
 # Exercise 4: Remove first n characters from a string.
 
 s = "Shakib"
