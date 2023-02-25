@@ -259,3 +259,15 @@ list2 = [100, 200, 300, 400]
 
 for i, j in zip(list1, list2[::-1]):
     print(i, j)
+# Exercise 7: Add new item to list after a specified item.
+list1 = [10, 20, [300, 400, [5000, 6000], 500], 30, 40]
+
+# Understand indexing
+# list1[0] = 10
+# list1[1] = 20
+# list1[2] = [300, 400, [5000, 6000], 500]
+# list1[2][2] = [5000, 6000]
+# list1[2][2][1] = 6000
+
+list1[2][2].append(7000)
+print(list1)
