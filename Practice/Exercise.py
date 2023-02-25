@@ -284,3 +284,21 @@ sub_list = ["h", "i", "j"]
 # solution
 list1[2][1][2].extend(sub_list)
 print(list1)
+
+# Exercise 10: Remove all Duplicates item from a list.
+list1 = [5, 20, 15, 20, 25, 50, 5, 20, 15, 5]
+
+# Solution 1
+ls = []
+for i in list1:
+    if i not in ls:
+        ls.append(i)
+print(ls)
+
+# Solution 2
+for i in list1[:]:
+    count = list1.count(i)
+    if count > 1:
+        for j in range(count-1):
+            list1.remove(i)
+print(list1)
