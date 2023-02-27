@@ -60,5 +60,17 @@ Expected output:
 ls = {k: sample_dict[k] for k in keys}
 print(ls)
 
+# Exercise 7: Check if a value exists in a dictionary
+sample_dict = {'a': 100, 'b': 200, 'c': 300}
+
+for x in sample_dict.values():
+    if x == 200:
+        print(f"{x} is present in the list")
+# OR
+sample_dict = {'a': 100, 'b': 200, 'c': 300}
+if 200 in sample_dict.values():
+    print(f"200 is present in the list")
+
+
 
 
