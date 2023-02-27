@@ -70,7 +70,13 @@ for x in sample_dict.values():
 sample_dict = {'a': 100, 'b': 200, 'c': 300}
 if 200 in sample_dict.values():
     print(f"200 is present in the list")
-
-
+    
+# Exercise 9: Get the key of a minimum value from the following dictionary
+sample_dict = {
+    'Physics': 82,
+    'Math': 65,
+    'history': 75
+}
+print(min(sample_dict, key=sample_dict.get))
 
 
