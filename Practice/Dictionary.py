@@ -30,3 +30,17 @@ sampleDict = {
 # sampleDict['class']['student']['marks'] = {'physics': 70, 'history': 80}
 # solution
 print(sampleDict['class']['student']['marks']['history'])
+
+#Exercise 4: Initialize dictionary with default values
+Given:
+employees = ['Kelly', 'Emma']
+defaults = {"designation": 'Developer', "salary": 8000}
+Output:
+{'Kelly': {'designation': 'Developer', 'salary': 8000}, 'Emma': {'designation': 'Developer', 'salary': 8000}}
+
+employees = ['Kelly', 'Emma']
+defaults = {"designation": 'Developer', "salary": 8000}
+ls = dict()
+for i in range(len(employees)):
+    ls[employees[i]] = defaults
+print(ls)
