@@ -11,3 +11,22 @@ ls = {**dict1, **dict2}
 # for i, j in zip(dict1, dict2):
 #     ls[i], ls[j] = dict1[i], dict2[j]
 print(ls)
+
+# Exercise 3: Print the value of key ‘history’ from the below dict
+sampleDict = {
+    "class": {
+        "student": {
+            "name": "Mike",
+            "marks": {
+                "physics": 70,
+                "history": 80
+            }
+        }
+    }
+}
+# understand how to located the nested key
+# sampleDict['class'] = {'student': {'name': 'Mike', 'marks': {'physics': 70, 'history': 80}}}
+# sampleDict['class']['student'] = {'name': 'Mike', 'marks': {'physics': 70, 'history': 80}}
+# sampleDict['class']['student']['marks'] = {'physics': 70, 'history': 80}
+# solution
+print(sampleDict['class']['student']['marks']['history'])
