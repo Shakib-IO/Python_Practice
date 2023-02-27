@@ -44,3 +44,21 @@ ls = dict()
 for i in range(len(employees)):
     ls[employees[i]] = defaults
 print(ls)
+
+# Exercise 5: Create a dictionary by extracting the keys from a given dictionary
+Given dictionary:
+sample_dict = {
+    "name": "Kelly",
+    "age": 25,
+    "salary": 8000,
+    "city": "New york"}
+
+# Keys to extract
+keys = ["name", "salary"]
+Expected output:
+{'name': 'Kelly', 'salary': 8000}
+ls = {k: sample_dict[k] for k in keys}
+print(ls)
+
+
+
