@@ -25,6 +25,7 @@ That includes back end development, software development, data science and writi
 - [Problem Solving with Algorithms and Data Structures.pdf](https://github.com/Shakib-IO/Python_Practice/files/9897072/ProblemSolvingwithAlgorithmsandDataStructures.pdf)
 - [Advance Python Tutorial](https://www.youtube.com/playlist?list=PL7yh-TELLS1FuqLSjl5bgiQIEH25VEmIc)
 - [Python Practice Book by Anand Chitipothu](https://anandology.com/python-practice-book/index.html#)
+- [Python Stanford](https://web.stanford.edu/class/archive/cs/cs106a/cs106a.1208/index.html#mainNav)
 
 
 
