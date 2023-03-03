@@ -34,3 +34,4 @@ That includes back end development, software development, data science and writi
 - [Pandas Practice](https://github.com/guipsamora/pandas_exercises)
 - [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/)
 - [PyNative](https://pynative.com/python-basic-exercise-for-beginners/)
+- [Python MIT](http://web.mit.edu/6.s189/www/index.html)
