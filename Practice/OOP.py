@@ -34,3 +34,37 @@ class Bus(Vehicle):
 B = Bus("School Bus", 100, 10)
 print(f"{B.seating_capacity()}")
 
+"""
+Exercise 6: Class Inheritance
+"""
+class Vehicle:
+
+    color = "White"
+    def __init__(self, name, max_speed, mileage, capacity):
+        self.name = name
+        self.max_speed = max_speed
+        self.mileage = mileage
+        self.capacity = capacity
+
+    def Total_Fare_amoutn(self):
+        return self.capacity * 100
+        
+class Bus(Vehicle):
+    def __init__(self, name, max_speed, mileage, capacity=50):
+        super().__init__(name, max_speed, mileage, capacity)
+
+
+    def Total_Fare_amoutn(self):
+        res = super().Total_Fare_amoutn() + super().Total_Fare_amoutn()*0.1
+        return res
+
+
+class Car(Vehicle):
+    pass
+
+B = Bus("Bus", 900, 100)
+C = Car("Audi", 90, 10, 10)
+
+print(C.Total_Fare_amoutn())
+print(B.Total_Fare_amoutn())
+
