@@ -37,3 +37,4 @@ That includes back end development, software development, data science and writi
 - [PyNative](https://pynative.com/python-basic-exercise-for-beginners/)
 - [Python MIT](http://web.mit.edu/6.s189/www/index.html)
 - [Python Cape Town University](https://www.cs.uct.ac.za/mit_notes/python/Object_Oriented_Programming.html#)
+- [www.practicepython.org](https://www.practicepython.org/)
