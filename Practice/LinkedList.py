@@ -2,7 +2,6 @@ class Node:
     def __init__(self, value):
         self.value = value
         self.next = None
-        
 
 class LinkedList:
     def __init__(self, value):
@@ -127,10 +126,21 @@ my_linked_list.append(2)
 my_linked_list.append(3)
 my_linked_list.append(4)
 
-print('LL before reverse():')
-my_linked_list.print_list()
-
-my_linked_list.reverse()
-
-print('\nLL after reverse():')
-my_linked_list.print_list()
+"""
+Exercise
+"""
+# LL: Find Middle Node (⚡ Interview Question)
+# Write a method to find and return the middle node in the Linked List WITHOUT using the length attribute
+def find_middle_node(self):
+    ""
+    Traverse linked list using two-pointers. 
+    Move one pointer by one and the other pointers by two. 
+    When the fast pointer reaches the end, 
+    the slow pointer will reach the middle of the linked list.
+    """
+    slow_runner = self.head
+    fast_runner = self.head
+    while fast_runner and fast_runner.next:
+        slow_runner = slow_runner.next
+        fast_runner =fast_runner.next.next
+    return slow_runner
