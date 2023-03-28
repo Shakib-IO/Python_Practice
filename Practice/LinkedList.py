@@ -149,12 +149,12 @@ def find_middle_node(self):
 # Write a method to determine if the Linked List contains a loop.
 
 def has_loop(self):
-"""
+    """
     Traverse linked list using two pointers.
     Move one pointer(slow_p) by one and another pointer(fast_p) by two.
     If these pointers meet at the same node then there is a loop. 
     If pointers do not meet then the linked list doesn’t have a loop.
-"""
+    """
     slow = self.head
     fast = self.head
     while fast and fast.next:
