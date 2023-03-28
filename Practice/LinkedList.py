@@ -147,7 +147,6 @@ def find_middle_node(self):
 
 # LL: Has Loop (⚡ Interview Question)
 # Write a method to determine if the Linked List contains a loop.
-
 def has_loop(self):
     """
     Traverse linked list using two pointers.
@@ -176,3 +175,19 @@ def has_loop(self):
         s.add(temp)
         temp = temp.next
     return false
+
+# LL: Remove Duplicates (⚡Interview Question)
+# Remove all duplicates from the Linked List.
+# https://www.prepbytes.com/blog/linked-list/remove-duplicates-from-an-unsorted-linked-list/
+def remove_duplicates(self):
+        values = set()
+        prev = None
+        curr = self.head
+        while curr:
+            if curr.value in values:
+                prev.next = curr.next
+                self.length -= 1
+            else:
+                values.add(curr.value)
+                prev = curr
+            curr = curr.next
