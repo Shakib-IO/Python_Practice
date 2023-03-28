@@ -132,7 +132,7 @@ Exercise
 # LL: Find Middle Node (⚡ Interview Question)
 # Write a method to find and return the middle node in the Linked List WITHOUT using the length attribute
 def find_middle_node(self):
-    ""
+    """
     Traverse linked list using two-pointers. 
     Move one pointer by one and the other pointers by two. 
     When the fast pointer reaches the end, 
@@ -144,3 +144,22 @@ def find_middle_node(self):
         slow_runner = slow_runner.next
         fast_runner =fast_runner.next.next
     return slow_runner
+
+# LL: Has Loop (⚡ Interview Question)
+# Write a method to determine if the Linked List contains a loop.
+
+def has_loop(self):
+"""
+    Traverse linked list using two pointers.
+    Move one pointer(slow_p) by one and another pointer(fast_p) by two.
+    If these pointers meet at the same node then there is a loop. 
+    If pointers do not meet then the linked list doesn’t have a loop.
+"""
+    slow = self.head
+    fast = self.head
+    while fast and fast.next:
+        slow = slow.next
+        fast = fast.next.next
+        if slow == fast:
+            return True
+    return False
