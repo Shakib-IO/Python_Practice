@@ -163,3 +163,16 @@ def has_loop(self):
         if slow == fast:
             return True
     return False
+def has_loop(self):
+    """
+    The idea is to insert the nodes in the hashmap and whenever 
+    a node is encountered that is already present in the hashmap then return true.
+    """
+    s = set()
+    temp = self.head
+    while temp:
+        if temp in s:
+            return True
+        s.add(temp)
+        temp = temp.next
+    return false
