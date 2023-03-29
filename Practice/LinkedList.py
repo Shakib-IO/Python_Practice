@@ -191,3 +191,46 @@ def remove_duplicates(self):
                 values.add(curr.value)
                 prev = curr
             curr = curr.next
+
+# LL: Find Kth Node From End (⚡Interview Question)
+# Find the item that is a certain number of steps away from the end of the linked list WITHOUT USING LENGTH.
+def find_kth_from_end(ll, k):
+    # Initialize both slow and fast pointers to 
+    # the head node of the linked list
+    slow = fast = ll.head   
+    
+    # Move the fast pointer k nodes ahead of the slow pointer
+    # If fast pointer reaches the end (None) before k nodes, 
+    # the linked list is too short and kth node doesn't exist
+    for _ in range(k):
+        if fast is None:
+            return None
+        fast = fast.next
+ 
+    # Move both pointers one node at a time until the fast 
+    # pointer reaches the end of the linked list (None).
+    # The slow pointer will now be pointing at the kth node 
+    # from the end of the linked list.
+    while fast:
+        slow = slow.next
+        fast = fast.next
+        
+    # Return the kth node from the end of the linked list
+    return slow
+def find_kth_from_end(LL, k):    
+    """
+    Calculate the length of the Linked List. Let the length be len. 
+    Print the (len – n + 1)th node from the beginning of the Linked List. 
+    """
+    temp = LL.head
+    count = 0
+    while temp:
+        temp = temp.next
+        count += 1
+    if k > count:
+        return None
+        
+    result = LL.head
+    for i in range(0, count-k):
+        result = result.next
+    return result
