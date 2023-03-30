@@ -267,3 +267,51 @@ def reverse_between(self, m, n):
         
     # update the head of the linked list with the next node of the dummy.
     self.head = dummy.next
+    
+# LL: Partition List (⚡ Interview Question)
+# You are given a singly linked list implementation 
+# in Python that does not have a tail pointer.
+
+def partition_list(self, x):
+        # One List with less than X
+        # Other List with greater/equal than X
+        # None of the nodes from the linked list should be duplicated.
+        # Traverse the original linked list and append each node to the appropriate new linked list
+        # Finally, you should connect the two new linked lists together.
+        
+        # If linked list is empty, return None
+        if self.head == None:
+            return None
+            
+        # Create two dummy nodes to be used as placeholders
+        # One will hold values less than x and the other will hold values greater
+        # than or equal to x
+        
+        small_node = Node(0) # Dummy Node 1
+        large_node = Node(0) # Dummy Node 2
+        
+        prev1 = small_node
+        prev2 = large_node
+        
+        # Start with the head node of the linked list
+        curr = self.head
+        
+        while curr:
+            if curr.value < x:
+                prev1.next = curr
+                prev1 = curr
+            else:
+                prev2.next = curr
+                prev2 = curr
+            
+            curr = curr.next
+            
+        # Terminate dummy2 list with None
+        prev2.next = None
+        
+        # Combine the two partitioned linked lists by pointing the last node
+        # in the dummy1 list to the first node in the dummy2 list
+        prev1.next = large_node.next
+        
+        # S# Set the head of the linked list to the first node in dummy1 
+        self.head = small_node.next
