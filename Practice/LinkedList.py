@@ -234,3 +234,36 @@ def find_kth_from_end(LL, k):
     for i in range(0, count-k):
         result = result.next
     return result
+
+# LL: Reverse Between (⚡Interview Question)
+# You are given a singly linked list and two integers m and n. 
+# Your task is to write a method reverse_between within the LinkedList class 
+# that reverses the nodes of the linked list 
+# from index m to index n (inclusive) in one pass and in-place
+
+def reverse_between(self, m, n):
+    # If the linked list is empty, then return None.
+    if self.head == None:
+        return None
+    
+    # Create a dummy node and connect it to the head.
+    dummy = Node(0)
+    dummy.next = self.head
+    prev = dummy
+    
+    # Move prev to the node at position m.
+    for i in range(m):
+        prev = prev.next
+        
+    # set current to the next node of prev.
+    current = prev.next
+    
+    # Reverse the linked list from position m to n.
+    for i in range(n-m):
+        temp = current.next
+        current.next = temp.next
+        temp.next = prev.next
+        prev.next = temp
+        
+    # update the head of the linked list with the next node of the dummy.
+    self.head = dummy.next
