@@ -313,5 +313,5 @@ def partition_list(self, x):
         # in the dummy1 list to the first node in the dummy2 list
         prev1.next = large_node.next
         
-        # S# Set the head of the linked list to the first node in dummy1 
+        #Set the head of the linked list to the first node in dummy1 
         self.head = small_node.next
