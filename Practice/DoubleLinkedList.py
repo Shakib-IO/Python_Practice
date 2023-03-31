@@ -140,3 +140,14 @@ def swap_first_last(self):
     self.head.value, self.tail.value = self.tail.value, self.head.value
     return True
 
+# DLL: Reverse (⚡Interview Question)
+# Create a new method called reverse that reverses the order of the nodes in the list.
+
+def reverse(self):
+    temp = self.head
+    while temp:
+         # swap the prev and next pointers of node points to
+        temp.prev, temp.next = temp.next, temp.prev
+        temp = temp.prev
+    # swap the head and tail pointers
+    self.head, self.tail = self.tail, self.head
