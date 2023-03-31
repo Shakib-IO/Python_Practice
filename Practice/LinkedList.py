@@ -126,8 +126,10 @@ my_linked_list.append(2)
 my_linked_list.append(3)
 my_linked_list.append(4)
 
+
 """
-Exercise
+————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+                                                                Exercise
 """
 # LL: Find Middle Node (⚡ Interview Question)
 # Write a method to find and return the middle node in the Linked List WITHOUT using the length attribute
