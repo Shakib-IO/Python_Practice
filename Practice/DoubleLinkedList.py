@@ -129,7 +129,7 @@ class DoublyLinkedList:
 ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
                                                                 Exercise
 """
-# DLL: Swap First and Last (⚡Interview Question)
+# DLL: Swap First and Last (⚡ Interview Question)
 # Swap the values of the first and last node
 # Note that the pointers to the nodes themselves are not swapped - only their values are exchanged.
 def swap_first_last(self):
@@ -140,7 +140,7 @@ def swap_first_last(self):
     self.head.value, self.tail.value = self.tail.value, self.head.value
     return True
 
-# DLL: Reverse (⚡Interview Question)
+# DLL: Reverse (⚡ Interview Question)
 # Create a new method called reverse that reverses the order of the nodes in the list.
 
 def reverse(self):
@@ -151,3 +151,24 @@ def reverse(self):
         temp = temp.prev
     # swap the head and tail pointers
     self.head, self.tail = self.tail, self.head
+
+# DLL: Palindrome Checker (⚡ Interview Question)
+# Write a method to determine whether a given doubly linked list reads the same forwards and backwards.
+def is_palindrome(self):
+    if self.length <= 1:
+        return True
+
+    left = self.head
+    right = self.tail
+    """
+    The method initializes two pointers, left and right, that point
+    to the head and tail of the list, respectively. The method then iterates over
+    half of the list, comparing the values of the nodes at each end of the list to
+    see if they are the same.
+    """
+    for i in range(self.length//2):
+        if left.value != right.value:
+            return False
+        left = left.next
+        right = right.prev
+    return True
