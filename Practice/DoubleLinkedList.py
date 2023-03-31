@@ -172,3 +172,32 @@ def is_palindrome(self):
         left = left.next
         right = right.prev
     return True
+
+# DLL: Swap Nodes in Pairs (⚡ Interview Question)
+# Example: 1-->2-->3-->4--> should become 2-->1-->4-->3-->
+# Define a method to swap adjacent nodes in the doubly linked list.
+
+def swap_pairs(self):
+    # Initialize a dummy node and set its next node to the head of the list.
+    dummy = Node(0)
+    dummy.next = self.head
+    # Set the prev variable to the dummy node.
+    prev = dummy
+    
+    # Loop through the list while there are at least two more nodes to swap.
+    while self.head and self.head.next:
+        # Set first_node to the current head and second_node to the next node.
+        first_node = self.head
+        second_node = self.head.next
+        
+        # Modify the links to swap the nodes.
+        prev.next = second_node
+        first_node.next = second_node.next
+        second_node.next = first_node
+        
+        # Move the head of the list to the next pair of nodes to be swapped.
+        self.head = first_node.next
+        prev = first_node
+        
+    # Return the head of the list after swapping the nodes.
+    self.head = dummy.next
