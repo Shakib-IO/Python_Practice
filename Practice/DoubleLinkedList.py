@@ -125,5 +125,18 @@ class DoublyLinkedList:
         self.length -= 1
         return temp
 
-
+"""
+————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+                                                                Exercise
+"""
+# DLL: Swap First and Last (⚡Interview Question)
+# Swap the values of the first and last node
+# Note that the pointers to the nodes themselves are not swapped - only their values are exchanged.
+def swap_first_last(self):
+    if self.length == 0:
+        return None
+    if self.length == 1:
+        return self.head
+    self.head.value, self.tail.value = self.tail.value, self.head.value
+    return True
 
