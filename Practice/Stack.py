@@ -130,9 +130,7 @@ def reverse_string(ss:str):
         reverse_string += stack.pop()
     return reverse_string
 
-# Stack: Parentheses Balanced (⚡Interview Question)
-# Check to see if a string of parentheses is balanced or not.
-
+# Stack: Parentheses Balanced (⚡ Interview Question)
 def is_balanced_parentheses(parentheses:str):
     stack = Stack()
     for p in parentheses:
@@ -142,7 +140,31 @@ def is_balanced_parentheses(parentheses:str):
             if stack.is_empty() or stack.pop() != '(':
                 return False
     return stack.is_empty()
-
+ 
 balanced_parentheses = '((()))'
 unbalanced_parentheses = '((())))'
-print( is_balanced_parentheses(balanced_parentheses) )
+print(is_balanced_parentheses(balanced_parentheses))
+
+# Stack: Sort Stack (⚡ Interview Question)
+def sort_stack(stack):
+    # Create a new stack to hold the sorted elements
+    additional_stack = Stack()
+ 
+    # While the original stack is not empty
+    while not stack.is_empty():
+        # Remove the top element from the original stack
+        temp = stack.pop()
+ 
+        # While the additional stack is not empty and 
+        #the top element is greater than the current element
+        while not additional_stack.is_empty() and additional_stack.peek() > temp:
+            # Move the top element from the additional stack to the original stack
+            stack.push(additional_stack.pop())
+ 
+        # Add the current element to the additional stack
+        additional_stack.push(temp)
+ 
+    # Copy the sorted elements from the additional stack to the original stack
+    while not additional_stack.is_empty():
+        stack.push(additional_stack.pop())
+
