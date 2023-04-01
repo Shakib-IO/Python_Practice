@@ -129,3 +129,20 @@ def reverse_string(ss:str):
     while not stack.is_empty():
         reverse_string += stack.pop()
     return reverse_string
+
+# Stack: Parentheses Balanced (⚡Interview Question)
+# Check to see if a string of parentheses is balanced or not.
+
+def is_balanced_parentheses(parentheses:str):
+    stack = Stack()
+    for p in parentheses:
+        if p == '(':
+            stack.push(p)
+        elif p == ')':
+            if stack.is_empty() or stack.pop() != '(':
+                return False
+    return stack.is_empty()
+
+balanced_parentheses = '((()))'
+unbalanced_parentheses = '((())))'
+print( is_balanced_parentheses(balanced_parentheses) )
