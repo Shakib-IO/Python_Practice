@@ -67,3 +67,18 @@ Your task is to implement the enqueue method which should add an element to the 
       # Transfer all elements back from stack2 to stack1
       while len(self.stack2) > 0:
           self.stack1.append(self.stack2.pop())
+        
+"""
+Queue Using Stacks: Dequeue (⚡Interview Question)
+You have been tasked with implementing a queue data structure using two stacks in Python, 
+and you need to write the dequeue method. 
+"""
+def dequeue(self):
+    # Check if the queue is empty
+    if self.is_empty():
+        # Return None if the queue is empty
+        return None
+    else:
+        # Remove and return the last element in stack1
+        # which is the first element in the queue
+        return self.stack1.pop()
