@@ -104,6 +104,7 @@ print(my_tree.dfs_post_order())
 print(my_tree.dfs_in_order())
 
 
+# --------------------------------------------------------------------------------------------------------------------------------------------------------
 # BST: Validate BST (⚡ Interview Question)
 # You are tasked with writing a method called is_valid_bst in the 
 # BinarySearchTree class that checks whether a binary search tree is a valid binary search tree.
@@ -121,4 +122,40 @@ def is_valid_bst(self):
             return False
     return True
 
+class Solution:
+    def isValidBST(self, root: Optional[TreeNode]) -> bool:
+        if not root:
+            return True
+        results = []
+        def traverse(current_node):
+            if root is None:
+                return
+            if current_node.left is not None:
+                traverse(current_node.left)
+            results.append(current_node.val)
+            if current_node.right is not None:
+                traverse(current_node.right)
+        traverse(root)
+        for i in range(1, len(results)):
+            if results[i] <= results[i-1]:
+                return False
+        return True
+    
+def isValidBST(self, root: TreeNode) -> bool:
+        if not root:
+            return True
+        def inOrder(root, order):
+            if root is None:
+                return
+            inOrder(root.left, order)
+            order.append(root.val)
+            inOrder(root.right, order)
+            
+        order = []
+        inOrder(root, order)
+        for i in range(1, len(order)):
+            if order[i] <= order[i-1]:
+                return False
+        return True
 
+# --------------------------------------------------------------------------------------------------------------------------------------------------------
