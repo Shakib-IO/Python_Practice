@@ -161,12 +161,20 @@ def isValidBST(self, root: TreeNode) -> bool:
 # BST: Kth Smallest Node
 # Given a binary search tree, find the kth smallest element in the tree. 
 # For example, if the tree contains the elements [1, 2, 3, 4, 5], the 3rd smallest element would be 3
+""" 
+Steps
+1. It initializes a stack to hold nodes and sets a temporary node to the root of the tree.
+2. It uses a while loop to traverse the tree in-order (left, root, right) and add each node to the stack.
+3. It pops a node from the stack and decrements the k counter.
+4. If k is equal to 0, it returns the value of the node, which is the kth smallest element.
+5. If k is not equal to 0, it moves to the right child of the node and continues traversing the tree.
+6. If it reaches the end of the tree without finding the kth smallest element, it returns None.
+"""
 def kth_smallest(self, k):
     # create a stack to hold nodes
     stack = []    
     # start at the root of the tree      
-    temp = self.root    
-
+    temp = self.root
     while stack or temp:
         # traverse to the leftmost node
         while temp: 
