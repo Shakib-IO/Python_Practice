@@ -10,7 +10,7 @@ That includes back end development, software development, data science and writi
 2. SCIENTIFIC COMPUTING + DATA SCIENCE
 3. Data Science / MACHINE LEARNING.
 
-**Some resources for Learn Python**
+### Some resources for Learn Python
 
 - [Python by Codecademy (Free)](https://www.codecademy.com/learn/learn-python)
 - [Python Tutorial for Beginners (Programming with Mosh)](https://www.youtube.com/watch?v=_uQrJ0TkZlc)
@@ -29,7 +29,7 @@ That includes back end development, software development, data science and writi
 
 
 
-**Exercises**
+### Exercises
 
 - [Reinforcement Learning Practice](https://github.com/ShangtongZhang/reinforcement-learning-an-introduction)
 - [Pandas Practice](https://github.com/guipsamora/pandas_exercises)
@@ -38,3 +38,4 @@ That includes back end development, software development, data science and writi
 - [Python MIT](http://web.mit.edu/6.s189/www/index.html)
 - [Python Cape Town University](https://www.cs.uct.ac.za/mit_notes/python/Object_Oriented_Programming.html#)
 - [www.practicepython.org](https://www.practicepython.org/)
+- [ThinkPython](https://github.com/AllenDowney/ThinkPython)
