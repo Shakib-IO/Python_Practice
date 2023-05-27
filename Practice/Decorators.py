@@ -1,5 +1,6 @@
 # https://youtu.be/QH5fw9kxDQA
 # Good Example: https://stackoverflow.com/a/1594484
+# Functools: https://stackoverflow.com/a/309000
 import logging
 from math import sqrt
 from time import perf_counter
