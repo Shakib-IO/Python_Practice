@@ -57,4 +57,8 @@ class Rectangle:
 class Square(Rectangle):
     def __init__(self, length):
         super(Square).__init__(length, length)
+
+Here, parent class is Rectangle.
+Square class will inherit Rectangle class. By calling the super() method
+Square class will get access to the methods of Rectangle.
 ```
