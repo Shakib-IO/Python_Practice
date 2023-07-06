@@ -34,3 +34,27 @@ e = Example()
 # __call__ method will be called
 e()
 ```
+- [super(GCN, self).__init__()](https://realpython.com/python-super/)
+- [super()](https://youtu.be/MBbVq_FIYDA)
+```
+super(): Function used to give access to the methods of a parent class.
+          Returns a temporary object of a parent class when used.
+
+super(subclass, self) can also take two parameters: the first is the subclass,
+and the second parameter is an object that is an instance of that subclass.
+
+class Rectangle:
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+    
+    def area(self):
+        return self.length * self.width
+    
+    def perimeter(self):
+        return 2 * (self.length + self.width)
+
+class Square(Rectangle):
+    def __init__(self, length):
+        super(Square).__init__(length, length)
+```
