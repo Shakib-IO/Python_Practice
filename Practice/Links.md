@@ -1,0 +1,1 @@
+- ##### [Python Magic Methods](https://rszalski.github.io/magicmethods/)
