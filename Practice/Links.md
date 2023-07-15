@@ -1,1 +1,2 @@
 - ##### [Python Magic Methods](https://rszalski.github.io/magicmethods/)
+- ##### [isinstance()](https://stackdiary.com/tutorials/python-isinstance/)
