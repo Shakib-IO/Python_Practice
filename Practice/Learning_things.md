@@ -62,3 +62,16 @@ Here, parent class is Rectangle.
 Square class will inherit Rectangle class. By calling the super() method
 Square class will get access to the methods of Rectangle.
 ```
+- [os.path.abspath(os.path.join(os.path.dirname(__file__), os.path.pardir))](https://stackoverflow.com/questions/21005822/what-does-os-path-abspathos-path-joinos-path-dirname-file-os-path-pardir)
+
+```
+__file__ represents the file the code is executing from
+
+os.path.dirname(__file__) gives you the directory the file is in
+
+os.path.pardir stands for ".." which means one directory above the current one
+
+os.path.join(os.path.dirname(__file__), os.path.pardir) joins the directory name and ".."
+
+os.path.abspath(os.path.join(os.path.dirname(__file__), os.path.pardir)) resolves the above path and gives you an absolute path for the parent directory of the directory your file is in
+```
