@@ -27,6 +27,7 @@ That includes back end development, software development, data science and writi
 - [Python Practice Book by Anand Chitipothu](https://anandology.com/python-practice-book/index.html#)
 - [Python Stanford](https://web.stanford.edu/class/archive/cs/cs106a/cs106a.1208/index.html#mainNav)
 - [Python SWE](https://github.com/gjbex/Python-software-engineering)
+- [Data Engineering Zoomcamp](https://dezoomcamp.streamlit.app/Course_Overview)
 
 
 
