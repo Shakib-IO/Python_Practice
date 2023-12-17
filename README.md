@@ -29,6 +29,7 @@ That includes back end development, software development, data science and writi
 - [Python SWE](https://github.com/gjbex/Python-software-engineering)
 - [Data Engineering Zoomcamp](https://dezoomcamp.streamlit.app/Course_Overview)
 - [Python Design Patterns](https://refactoring.guru/design-patterns/python)
+- [Python Design Patterns Medium](https://medium.com/@amirm.lavasani/design-patterns-in-python-a-series-f502b7804ae5)
 
 
 
