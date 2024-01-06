@@ -36,3 +36,15 @@ print(assistant.age)
 # Class attributes
 print(programmer.salary)
 print(assistant.monthly_bonus)
+
+"""Coding Practice"""
+# 28. Problem: Remove Spaces from a String.
+s = "The quick brown fox jumped over the lazy dog."
+ss = ""
+for i in s:
+    if i != " ":
+        ss += i
+print(ss)
+# Using Lambda and Map function
+print(''.join(map(lambda x: x if x != " " else "", s)))
+
