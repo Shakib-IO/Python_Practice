@@ -48,3 +48,17 @@ print(ss)
 # Using Lambda and Map function
 print(''.join(map(lambda x: x if x != " " else "", s)))
 
+
+# 34. Challenge: Reverse Words in a String
+S = "Shakib Khan"
+ss = ""
+SS = S[::-1]
+for i in SS:
+    if i.islower():
+        ss += i.upper()
+    else:
+        ss += i.lower()
+print(ss)
+
+ssd = "".join(map(lambda x: x.upper() if x.lower() else x.lower(), S[::-1]))
+print(ssd)
