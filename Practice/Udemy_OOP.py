@@ -61,4 +61,11 @@ for i in SS:
 print(ss)
 
 ssd = "".join(map(lambda x: x.upper() if x.lower() else x.lower(), S[::-1]))
-print(ssd)
+print(SSD)
+
+# 56. Solution: Remove Duplicates from a list
+my_list = [1, 2, 2, 3, 4, 4, 5]
+# Using map and lambda to remove duplicates
+unique_list = list(map(lambda x: my_list.index(x), sorted(set(my_list), key=my_list.index)))
+print(unique_list)
+
