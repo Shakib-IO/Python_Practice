@@ -81,3 +81,22 @@ print(dic)
 dict1 = {}
 _ = list(map(lambda x: dict1.update({x: dict1.get(x, 0) + 1}), l))
 print(dict1)
+
+# 78. Solution: Generate all Permutations of a List (*)
+
+l = [1, 2, 3]
+permute = lambda lst: [[x] + p for i, x in enumerate(lst) for p in permute(lst[:i] + lst[i+1:])] if len(lst) > 1 else [lst[:]]
+perms = permute(l)
+print(perms)
+
+def permutation(l):
+    if len(l) == 0:
+        return [[]]
+    permutations = []
+    for i in range(len(l)):
+        curr = [l[i]]
+        remaining = l[:i] + l[i+1:]
+        for j in gen(remaining):
+            permutations.append(curr + j)
+    return permutations
+print(gen(l))
