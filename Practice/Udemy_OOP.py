@@ -69,3 +69,15 @@ my_list = [1, 2, 2, 3, 4, 4, 5]
 unique_list = list(map(lambda x: my_list.index(x), sorted(set(my_list), key=my_list.index)))
 print(unique_list)
 
+# 74. Solution: Make a Frequency Dictionary from the Elements of a List.
+l = [1,1,1,2,3,4,2,3,4,2,3]
+dic = {}
+for i in range(len(l)):
+    if l[i] not in dic:
+        dic[l[i]] = 1
+    else:
+        dic[l[i]] += 1
+print(dic)
+dict1 = {}
+_ = list(map(lambda x: dict1.update({x: dict1.get(x, 0) + 1}), l))
+print(dict1)
