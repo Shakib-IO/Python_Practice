@@ -31,7 +31,8 @@ That includes back end development, software development, data science and writi
 - [Python Design Patterns](https://refactoring.guru/design-patterns/python)
 - [Python Design Patterns Medium](https://medium.com/@amirm.lavasani/design-patterns-in-python-a-series-f502b7804ae5)
 
-
+### Python Design Patterns
+- [Python Patters](https://python-patterns.guide/)
 
 ### Exercises
 
