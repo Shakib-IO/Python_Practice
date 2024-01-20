@@ -9,6 +9,7 @@
 # In essence, a Singleton pattern restricts the instantiation of a class to a single object. This means that regardless of how many times the code requests an instance of the class, it will always receive the same instance. 
 # Think of it as a gatekeeper for ensuring that a particular class remains unique and unified throughout an application.
 
+# Drawbacks of Singleton: https://www.youtube.com/watch?v=Rm4JP7JfsKY&t=338s
 """
 All implementations of the Singleton have these two steps in common:
 Make the default constructor private, to prevent other objects from using the new operator with the Singleton class.
