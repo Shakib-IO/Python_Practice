@@ -28,11 +28,12 @@ That includes back end development, software development, data science and writi
 - [Python Stanford](https://web.stanford.edu/class/archive/cs/cs106a/cs106a.1208/index.html#mainNav)
 - [Python SWE](https://github.com/gjbex/Python-software-engineering)
 - [Data Engineering Zoomcamp](https://dezoomcamp.streamlit.app/Course_Overview)
-- [Python Design Patterns](https://refactoring.guru/design-patterns/python)
-- [Python Design Patterns Medium](https://medium.com/@amirm.lavasani/design-patterns-in-python-a-series-f502b7804ae5)
+
 
 ### Python Design Patterns
 - [Python Patters](https://python-patterns.guide/)
+- [Python Design Patterns](https://refactoring.guru/design-patterns/python)
+- [Python Design Patterns Medium](https://medium.com/@amirm.lavasani/design-patterns-in-python-a-series-f502b7804ae5)
 
 ### Exercises
 
